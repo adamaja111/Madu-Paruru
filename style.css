@@ -211,7 +211,7 @@ main {
   width: 80%;
 }
 .heroRight img {
-  width: 100%;
+  width: 150%;
 }
 .decorationCircle {
   position: absolute;
@@ -656,4 +656,50 @@ footer .content {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: #070721;
+  padding: 40px 50px;
+  border-radius: 30px;
+}
+
+.feature-item {
+  text-align: center;
+  width: 30%;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.feature-item img {
+  width: 95px; /* ukuran gambar diperbesar */
+  height: 95px; /* menjaga proporsi */
+  object-fit: cover; /* agar gambar tetap rapi */
+  border-radius: 20px; /* sedikit rounded */
+  margin-bottom: 18px;
+  transition: transform .35s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(255, 200, 50, 0.25); /* efek glow madu */
+}
+
+.feature-item:hover img {
+  transform: scale(1.18) rotate(2deg); /* animasi lebih smooth */
+}
+
+.feature-item h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feature-item p {
+  color: #d6d6d6;
+  font-size: 15px;
+  line-height: 1.5;
 }
